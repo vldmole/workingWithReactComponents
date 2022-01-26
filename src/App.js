@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import ListItem from "./components/list-item/ListItem.js";
+import OrderedList from "./components/ordered-list/OrderedList";
+import Card from "./components/card/card.js";
 
-function App() {
+function App()
+{
+  const itens = ["item 0", "item 3", "item 2"];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <> 
+      <h1>A first component</h1>
+      <ul>
+        <ListItem text="Item 1"/>
+        <ListItem text="Item 1" />
+        <ListItem text="Item 1" />
+        <li>Item 4</li>
+      </ul>
+
+      <OrderedList itens={ itens } />
+
+      <Card />
+    </>
+  )
 }
 
 export default App;
