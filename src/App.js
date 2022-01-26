@@ -1,6 +1,7 @@
 import ListItem from "./components/list-item/ListItem.js";
 import OrderedList from "./components/ordered-list/OrderedList";
 import Card from "./components/card/card.js";
+import Button from "./components/button/Button.js";
 
 function App()
 {
@@ -18,6 +19,8 @@ function App()
       <OrderedList itens={ itens } />
 
       <Card />
+
+      <Button label='label' />
     </>
   )
 }

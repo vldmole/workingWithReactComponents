@@ -1,10 +1,9 @@
-export default function Button(props, className)
+export default function Button(props)
 {
-   console.log(props);
    return (
       <button
          type="button"
-         className={ props.className || className || "btn" }
+         className = { props.className || "btn" }
          onClick={ props.onClick }
       >
          { props.label || props.children }
